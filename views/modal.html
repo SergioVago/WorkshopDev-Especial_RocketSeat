@@ -2,7 +2,7 @@
   <div class="content">
     <h1>Nova Ideia</h1>
 
-    <form action="">
+    <form method="POST" onsubmit="return checkFields(event)">
 
       <div class="input-wrapper">
         <label for="title">Título da ideia</label>
@@ -25,13 +25,12 @@
       </div>
 
       <div class="input-wrapper">
-        <label for="ling">Link da ideia</label>
-        <input type="url" name="ling">
+        <label for="link">Link da ideia</label>
+        <input type="url" name="link">
       </div>
 
       <a href="#" onclick="onOff()">Voltar</a>
-      <button>Salvar</button>
-
+      <button type="submit">Salvar</button>
     </form>
   </div>
 </div>
